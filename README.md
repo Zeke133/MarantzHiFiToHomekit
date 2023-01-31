@@ -13,6 +13,12 @@ As a hardware base I used ESP8266 NodeMCU board which found in my workshop.
 
 Amplifier has an IR remote control and TTL-level Input/Output on a back panel to transmit/receive control signal by wire as well.
 The last one I decided to utilize by connection to ESP8266 board.
+One of ESP GPIO lines is connected via opto-isolator to amplifier control input.
+Another one is planed to be connected in the same way to the ampifier stand-by relay output for monitoring of amplifier power state.
 
-Here is another project helped me on start - https://github.com/samm-git/marantz-rc-esp32.
-There is a library to connect ESP8266 with Homekit I utilized - https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266.
+Internall amplifier control IC power supply is based on small separate transformer and linear 7805 voltage stabilizer without a heatsink.
+Therefore I decided to add dedicated AC220/DC5 power supply for ESP and Bluetooth adapter used.
+
+Here is a related projects which helped me or were utilized here:
+- https://github.com/samm-git/marantz-rc-esp32.
+- https://github.com/Mixiaoxiao/Arduino-HomeKit-ESP8266.
