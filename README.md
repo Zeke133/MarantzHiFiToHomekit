@@ -24,6 +24,8 @@ One line there is constant +5V whenever amplifier is in Stand-by or Power-On sta
 
 Second one is +5V activation Power-On relay to supply main amplifier board which could be used via opto-isolator to identify Power-On state.
 
+For more details on implementation [please follow here](misc/misc.md)
+
 ## Projects used
 
 - Arduino with ESP8266 board support
